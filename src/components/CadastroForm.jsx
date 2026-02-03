@@ -1,7 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import styles from '../CadastroForm.module.css'
+import styles from './CadastroForm.module.css'
 import logoBanda from '../assets/the_final_cut_wpp.png';
-//import '../form.css';
+
+const containerStyle = {
+    backgroundImage: `url(${logoBanda})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed', // Para efeito parallax (opcional)
+    minHeight: '100vh',
+    width: '100%'
+};
 
 // --- Requisito: Custom Hook (Lógica de envio com Loading) ---
 const useSubmitForm = () => {
@@ -78,11 +87,7 @@ const CadastroForm = () => {
   };
 
   return (
-    <div className="container-fluid min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
-      
-      <div className={styles.navHome}>
-        <a href="/"><i className="bi bi-house-fill fs-2 text-white"></i></a>
-      </div>
+    <div style={containerStyle} className="container-fluid min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
 
       <header className="text-center mb-4 text-white">
         <img src={logoBanda} alt="Pink Floyd" className="img-fluid mb-2" style={{ maxHeight: '100px' }} />
@@ -127,10 +132,10 @@ const CadastroForm = () => {
 
           <div className="col-12">
             <label className="form-label text-light fw-bold">Álbum Favorito* (Loop)</label>
-            <select name="fav_alb" className="form-select" onChange={handleChange}>
+            <select name="fav_alb" className="form-select" onChange={handleChange} value={formData.fav_alb}>
               {albuns.map((album, idx) => (
-                  <option key={idx} value={album}>{album}</option>
-                ))}
+                <option key={idx} value={album}>{album}</option>
+              ))}
             </select>
           </div>
 

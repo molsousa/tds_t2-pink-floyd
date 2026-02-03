@@ -93,7 +93,7 @@ const Home = () => {
                     <div className="col">
                         <div className="card bg-dark text-white h-100">
                             {/* Requisito: Importar imagem */}
-                            <img src="/assets/images/Pink-Floyd_Animals-orig.jpg" className="card-img-top" alt="Animals" />
+                            <img src="./src/assets/Pink-Floyd_Animals-orig.jpg" className="card-img-top" alt="Animals" />
                             <div className="card-body">
                                 <h5 className="card-title">Animals</h5>
                                 <Link to="/album/animals" className="btn btn-primary w-100">Mais informações</Link>
@@ -102,7 +102,7 @@ const Home = () => {
                     </div>
                     <div className="col">
                         <div className="card bg-dark text-white h-100">
-                            <img src="/assets/images/Pink-Floyd_The-Dark-Side-of-the-Moon-50-1.jpg" className="card-img-top" alt="TDSOTM" />
+                            <img src="./src/assets/Pink-Floyd_The-Dark-Side-of-the-Moon-50-1.jpg" className="card-img-top" alt="TDSOTM" />
                             <div className="card-body">
                                 <h5 className="card-title">Dark Side of the Moon</h5>
                                 <Link to="/album/tdsmoon" className="btn btn-primary w-100">Mais informações</Link>
