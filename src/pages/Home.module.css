@@ -1,0 +1,10 @@
+/* Correção C2.5: display none (usado para ocultar elementos condicionalmente via classe se necessário, embora React use renderização condicional) */
+.hidden {
+    display: none;
+}
+
+.titleMain {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #e63946;
+    text-shadow: 0 0 10px rgba(235, 11, 11, 0.6);
+}
