@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './form.css';
-import styles from './CadastroForm.module.css'
-import logoBanda from './assets/the_final_cut_wpp.png';
+import styles from '../CadastroForm.module.css'
+import logoBanda from '../assets/the_final_cut_wpp.png';
+//import '../form.css';
 
 // --- Requisito: Custom Hook (Lógica de envio com Loading) ---
 const useSubmitForm = () => {

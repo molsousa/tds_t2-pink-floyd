@@ -24,7 +24,7 @@ const Home = () => {
 
     // Estilo de fundo dinâmico
     const fundoStyle = {
-        backgroundImage: `url('/assets/images/tds.PNG')`,
+        backgroundImage: `url('./src/assets/tds.PNG')`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'fixed',

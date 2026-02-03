@@ -13,7 +13,7 @@ const AlbumPage = () => {
         animals: {
             title: "Animals",
             desc: "Décimo álbum de estúdio, inspirado em A Revolução dos Bichos...",
-            img: "/assets/images/Pink-Floyd_Animals-orig.jpg",
+            img: ".src/assets/Pink-Floyd_Animals-orig.jpg",
             audio: "/assets/Audio/Pigs (Three Different Ones) [ZUEGeWYWbuU].mp3",
             trackData: { titulo: "Pigs", ano: 1977, duracao: "11:25" }
         },
@@ -28,8 +28,8 @@ const AlbumPage = () => {
 
     // Mapeamento de imagens de fundo
     const backgrounds = {
-        animals: '/assets/images/Pink-Floyd_Animals-fundo.jpg',
-        tdsmoon: '/assets/images/Pink-Floyd_The-Dark-Side-of-the-Moon-50-1-fundo.jpg'
+        animals: '../assets/Pink-Floyd_Animals-fundo.jpg',
+        tdsmoon: '../assets/Pink-Floyd_The-Dark-Side-of-the-Moon-50-1-fundo.jpg'
     };
 
     // Estilo Dinâmico (Requisito) [cite: 77]

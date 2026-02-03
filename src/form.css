@@ -10,7 +10,7 @@ body {
     background-color: black;
     font-size: 1rem;
     color: aliceblue;
-    background-image: url('assets/the_final_cut_wpp.png');
+    background-image: url('./assets/the_final_cut_wpp.png');
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;
