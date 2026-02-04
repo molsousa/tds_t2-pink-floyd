@@ -8,11 +8,9 @@ const Footer = () => {
   return (
     <footer className="bg-dark text-secondary text-center py-4 mt-5 border-top border-secondary">
       <div className="container">
-        <p>&copy; {anoAtual} - Trabalho de TDS (React Extension)</p>
+        <p>&copy; {anoAtual} - Trabalho 2 - TDS</p>
         <div className="d-flex justify-content-center gap-3">
           <i className="bi bi-github"></i>
-          <i className="bi bi-facebook"></i>
-          <i className="bi bi-instagram"></i>
         </div>
       </div>
     </footer>

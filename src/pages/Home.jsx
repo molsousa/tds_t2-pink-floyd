@@ -24,7 +24,7 @@ const Home = () => {
 
     // Estilo de fundo dinâmico
     const fundoStyle = {
-        backgroundImage: `url('./src/assets/tds.PNG')`,
+        backgroundImage: `url('./src/assets/image/tds.PNG')`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'fixed',
@@ -93,19 +93,19 @@ const Home = () => {
                     <div className="col">
                         <div className="card bg-dark text-white h-100">
                             {/* Requisito: Importar imagem */}
-                            <img src="./src/assets/Pink-Floyd_Animals-orig.jpg" className="card-img-top" alt="Animals" />
+                            <img src="./src/assets/image/Pink-Floyd_Animals-orig.jpg" className="card-img-top" alt="Animals" />
                             <div className="card-body">
                                 <h5 className="card-title">Animals</h5>
-                                <Link to="/album/animals" className="btn btn-primary w-100">Mais informações</Link>
+                                <Link to="/animals" className="btn btn-primary w-100">Mais informações</Link>
                             </div>
                         </div>
                     </div>
                     <div className="col">
                         <div className="card bg-dark text-white h-100">
-                            <img src="./src/assets/Pink-Floyd_The-Dark-Side-of-the-Moon-50-1.jpg" className="card-img-top" alt="TDSOTM" />
+                            <img src="./src/assets/image/Pink-Floyd_The-Dark-Side-of-the-Moon-50-1.jpg" className="card-img-top" alt="TDSOTM" />
                             <div className="card-body">
                                 <h5 className="card-title">Dark Side of the Moon</h5>
-                                <Link to="/album/tdsmoon" className="btn btn-primary w-100">Mais informações</Link>
+                                <Link to="/tdsmoon" className="btn btn-primary w-100">Mais informações</Link>
                             </div>
                         </div>
                     </div>

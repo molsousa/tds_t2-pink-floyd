@@ -13,26 +13,26 @@ const AlbumPage = () => {
         animals: {
             title: "Animals",
             desc: "Décimo álbum de estúdio, inspirado em A Revolução dos Bichos...",
-            img: ".src/assets/Pink-Floyd_Animals-orig.jpg",
-            audio: "/assets/Audio/Pigs (Three Different Ones) [ZUEGeWYWbuU].mp3",
+            img: './src/assets/image/Pink-Floyd_Animals-orig.jpg',
+            audio: "./src/assets/audio/Pigs (Three Different Ones).mp3",
             trackData: { titulo: "Pigs", ano: 1977, duracao: "11:25" }
         },
         tdsmoon: {
             title: "The Dark Side of the Moon",
             desc: "Explora temas como conflito, ganância e tempo...",
-            img: "/assets/images/Pink-Floyd_The-Dark-Side-of-the-Moon-50-1.jpg",
-            audio: "/assets/Audio/Brain Damage - tDSotM.mp3", // Ajuste o caminho conforme necessário
+            img: "./src/assets/image/Pink-Floyd_The-Dark-Side-of-the-Moon.jpg",
+            audio: "./src/assets/audio/Brain Damage - tDSotM.mp3", // Ajuste o caminho conforme necessário
             trackData: { titulo: "Brain Damage", ano: 1973, duracao: "3:50" }
         }
     };
 
     // Mapeamento de imagens de fundo
     const backgrounds = {
-        animals: '../assets/Pink-Floyd_Animals-fundo.jpg',
-        tdsmoon: '../assets/Pink-Floyd_The-Dark-Side-of-the-Moon-50-1-fundo.jpg'
+        animals: './src/assets/image/Pink-Floyd_Animals-fundo.jpg',
+        tdsmoon: './src/assets/image/Pink-Floyd_The-Dark-Side-of-the-Moon-fundo.jpg'
     };
 
-    // Estilo Dinâmico (Requisito) [cite: 77]
+    // Estilo Dinâmico (Requisito)
     const dynamicBackground = {
         backgroundImage: `url(${backgrounds[id] || ''})`,
         backgroundSize: '100% 100%',
@@ -45,7 +45,7 @@ const AlbumPage = () => {
 
     const data = albumsData[id];
     
-    // CSS Dinâmico (Classe baseada no álbum) [cite: 25, 26]
+    // CSS Dinâmico (Classe baseada no álbum)
     const bgClass = id === 'animals' ? 'bg-dark text-white' : 'bg-secondary text-light';
 
     // Eventos de Mídia 

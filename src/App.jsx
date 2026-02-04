@@ -14,7 +14,7 @@ function App() {
       <main className="container-fluid"> {/* Container principal */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/album/:id" element={<AlbumPage />} />
+          <Route path="/:id" element={<AlbumPage />} />
           <Route path="/cadastro" element={<CadastroForm />} />
         </Routes>
       </main>

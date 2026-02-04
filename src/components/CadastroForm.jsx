@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import styles from './CadastroForm.module.css'
-import logoBanda from '../assets/the_final_cut_wpp.png';
+import logoBanda from '../assets/image/Pink-Floyd_The-Final-Cut.jpg';
+import fundo from '../assets/image/the_final_cut_wpp.png';
 
 const containerStyle = {
-    backgroundImage: `url(${logoBanda})`,
+    backgroundImage: `url(${fundo})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
