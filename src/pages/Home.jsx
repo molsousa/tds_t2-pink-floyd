@@ -42,14 +42,14 @@ const Home = () => {
                 <h1 className={styles.titleMain}>{bandName}</h1>
                 
                 <ul>
-                    <li>Formada em {bandInfo.formed} ({2026 - bandInfo.formed} anos atrás).</li>
+                    <li>Formada em {bandInfo.formed}.</li>
                     <li>Origem: {bandInfo.origin}</li>
                     <li>Pioneiros do psicodélico e progressivo.</li>
                 </ul>
 
                 <Link to="/cadastro">
                     <button className="btn btn-danger">
-                        <i className="bi bi-person-add"></i> Adicionar Membro
+                        <i className="bi bi-person-add"></i> Cadastro
                     </button>
                 </Link>
 
@@ -83,6 +83,8 @@ const Home = () => {
                             <tbody>
                                 <tr><td>David Gilmour</td><td>Guitarra</td></tr>
                                 <tr><td>Roger Waters</td><td>Baixo</td></tr>
+                                <tr><td>Richard Wright</td><td>Teclado</td></tr>
+                                <tr><td>Nick Mason</td><td>Bateria</td></tr>
                             </tbody>
                         </table>
                     </div>
