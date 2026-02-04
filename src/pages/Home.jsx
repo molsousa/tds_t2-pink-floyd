@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom';
 import styles from './Home.module.css'; // Requisito: CSS Modules
 
 const Home = () => {
-    // --- 1. DECLARAÇÃO DE VARIÁVEIS E ESTADOS (Sempre antes do return) ---
+  
     
     // Interpolar variáveis (Array e Objeto) - [Requisito: Interpolar 3 tipos]
     const bandName = "Pink Floyd"; // Comum
     const bandInfo = { formed: 1965, origin: "Londres" }; // Objeto
     const curiosities = [ // Array
-        { id: 1, title: "Dark Side & Wish You Were Here", text: "Sucesso consolidado..." },
-        { id: 2, title: "Roger Waters", text: "Engajamento político..." },
-        { id: 3, title: "Pompeia", text: "Show sem público..." }
+        { id: 1, title: "Dark Side & Wish You Were Here", text: "SO álbum The Dark Side of the Moon (1973) consolidou o sucesso do Pink Floyd com temas profundos sobre morte e desgaste emocional, permanecendo por mais de dez anos nas paradas dos EUA." },
+        { id: 2, title: "Roger Waters", text: "Roger Waters, influenciado por sua formação familiar comunista e pela morte de seu pai na guerra, sempre expressou ideais políticos e de defesa da democracia.Em 2019, ele se manifestou publicamente contra a extradição de Julian Assange, fundador do WikiLeaks, preso em Londres." },
+        { id: 3, title: "Pompeia", text: "O Pink Floyd realizou um dos shows mais icônicos da história do rock: Live at Pompeii.Gravado em um anfiteatro romano na antiga cidade de Pompeia destruída pelo vulcão Vesúvio, o concerto foi feito sem público, marcando um momento artístico único e inovador." }
     ];
 
     // State para renderização condicional - [Requisito: useState]
@@ -32,18 +32,21 @@ const Home = () => {
        // paddingTop: '100%'
     };
 
-    // --- 2. APENAS UM RETURN ---
+  
     return (
         <div style={fundoStyle}> 
-            {/* Usando a classe 'fundo' que você já tinha no CSS original */}
+            {/* Usando a classe 'fundo' que já tinha no CSS original */}
             <div className="container mb-5 fundo">
                 
-                {/* Requisito: Código JS no JSX e Interpolação */}
+                {/* Código JS no JSX e Interpolação */}
                 <h1 className={styles.titleMain}>{bandName}</h1>
                 
                 <ul>
-                    <li>Formada em {bandInfo.formed}.</li>
-                    <li>Origem: {bandInfo.origin}</li>
+                    <li> Pink Floyd foi uma banda britânica de rock, surgida em 1965, que esteve na vanguarda do movimento psicodélico
+                     dos anos 1960 e depois ajudou a popularizar o álbum conceitual para o grande público na década de 1970.</li>
+                    <li>A banda foi formada em 1965. Eles passaram por alguns nomes antes de adotarem “Pink Floyd”, inspirado nos
+                     músicos de blues Pink Anderson e Floyd Council. Sob a liderança de Syd Barrett, o grupo se tornou um marco do
+                     underground britânico.</li>
                     <li>Pioneiros do psicodélico e progressivo.</li>
                 </ul>
 
@@ -55,7 +58,7 @@ const Home = () => {
 
                 <h2 className="mt-5 text-secondary">Curiosidades </h2>
                 <div className="accordion accordion-flush" id="accordionFlushExample">
-                    {/* Requisito: Reuso de componente através de loop */}
+                    {/*  Reuso de componente através de loop */}
                     {curiosities.map((item) => (
                         <div className="accordion-item bg-dark text-white" key={item.id}>
                             <h2 className="accordion-header">
@@ -104,7 +107,7 @@ const Home = () => {
                     </div>
                     <div className="col">
                         <div className="card bg-dark text-white h-100">
-                            <img src="./src/assets/image/Pink-Floyd_The-Dark-Side-of-the-Moon-50-1.jpg" className="card-img-top" alt="TDSOTM" />
+                            <img src="./src/assets/image/Pink-Floyd_The-Dark-Side-of-the-Moon.jpg" className="card-img-top" alt="TDSOTM" />
                             <div className="card-body">
                                 <h5 className="card-title">Dark Side of the Moon</h5>
                                 <Link to="/tdsmoon" className="btn btn-primary w-100">Mais informações</Link>

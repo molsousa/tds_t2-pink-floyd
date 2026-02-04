@@ -1,9 +1,9 @@
 /**
- * Componente de Rodapé.
- * Documentação: Exibe créditos e ano dinâmico (JS no JSX).
+Componente de Rodapé.
+Exibe créditos e ano dinâmico.
  */
 const Footer = () => {
-  const anoAtual = new Date().getFullYear(); // JS no JSX
+  const anoAtual = new Date().getFullYear(); 
 
   return (
     <footer className="bg-dark text-secondary text-center py-4 mt-5 border-top border-secondary">

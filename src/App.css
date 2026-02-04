@@ -1,3 +1,4 @@
+/* Estilo aplicado ao elemento raiz da aplicação */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,6 +6,8 @@
   text-align: center;
 }
 
+
+/* Estilo base para a logo */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -18,6 +21,9 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+
+
+/* Animação que gira a logo continuamente */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -27,16 +33,25 @@
   }
 }
 
+
+
+/* Aplica animações apenas se o usuário
+não tiver ativado a redução de movimento no sistema */
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
 
+
+
+/* Estilo para o container de cartões */
 .card {
   padding: 2em;
 }
 
+
+/* Estilo para o texto de documentação */
 .read-the-docs {
   color: #888;
 }

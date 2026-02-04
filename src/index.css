@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #e7e4e4; /* Fundo escuro padrão */
+  background-color: #e7e4e4; 
   color: black;
   min-height: 100vh;
   text-align: center;
@@ -27,7 +27,7 @@ body {
   height: auto;
 }
 
-/* Personalização da barra de rolagem (opcional, para ficar estilo Dark) */
+/* Personalização da barra de rolagem  */
 ::-webkit-scrollbar {
   width: 10px;
 }

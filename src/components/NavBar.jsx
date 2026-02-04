@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 
 /**
- * Componente de Navegação.
- * Utiliza links do React Router para evitar o refresh da página.
+ Componente de Navegação.
+ Utiliza links do React Router para evitar o refresh da página.
  */
 const Navbar = () => {
   return (

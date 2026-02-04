@@ -9,7 +9,7 @@ import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
-// Importando Ícones do Bootstrap (necessário para o ícone de 'Adicionar Membro')
+// Importando Ícones do Bootstrap 
 import 'bootstrap-icons/font/bootstrap-icons.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(

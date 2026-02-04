@@ -1,8 +1,8 @@
 import React from 'react';
 
 /**
- * Componente Reutilizável de Accordion.
- * Requisito: Recebe dados via Props (id, titulo, conteudo).
+Componente Reutilizável de Accordion.
+Requisito: Recebe dados via Props (id, titulo, conteudo).
  */
 const AccordionItem = ({ id, titulo, conteudo }) => {
   return (

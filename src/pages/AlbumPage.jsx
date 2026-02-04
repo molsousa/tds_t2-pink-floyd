@@ -2,24 +2,24 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 /**
- * Componente reutilizável para páginas de álbum.
- * Recebe Props ou carrega dados baseados na rota.
+Componente reutilizável para páginas de álbum.
+Recebe Props ou carrega dados baseados na rota.
  */
 const AlbumPage = () => {
-    const { id } = useParams(); // Pega 'animals' ou 'tdsmoon' da URL
+    const { id } = useParams(); // Pega o album animals ou tdsmoon da URL
     
-    // Simulação de banco de dados local para preencher o componente
+    
     const albumsData = {
         animals: {
             title: "Animals",
-            desc: "Décimo álbum de estúdio, inspirado em A Revolução dos Bichos...",
+            desc: "Animals é o décimo álbum de estúdio da banda inglesa de rock progressivo Pink Floyd, lançado em janeiro de 1977. Seguindo a linha dos álbuns anteriores, The Dark Side of the Moon e Wish You Were Here, este também é um álbum conceitual, que faz críticas às condições político-sociais da Inglaterra dos anos 1970, além de apresentar uma notável mudança no estilo musical do grupo.",
             img: './src/assets/image/Pink-Floyd_Animals-orig.jpg',
             audio: "./src/assets/audio/Pigs (Three Different Ones).mp3",
             trackData: { titulo: "Pigs", ano: 1977, duracao: "11:25" }
         },
         tdsmoon: {
             title: "The Dark Side of the Moon",
-            desc: "Explora temas como conflito, ganância e tempo...",
+            desc: "O disco se baseia em ideias exploradas nas gravações e performances anteriores do Pink Floyd, enquanto omite os instrumentais estendidos que caracterizaram o trabalho anterior da banda. O grupo empregou gravação multicanal, loops de fita e sintetizadores analógicos, incluindo experimentação com o EMS VCS 3 e um Synthi",
             img: "./src/assets/image/Pink-Floyd_The-Dark-Side-of-the-Moon.jpg",
             audio: "./src/assets/audio/Brain Damage - tDSotM.mp3", // Ajuste o caminho conforme necessário
             trackData: { titulo: "Brain Damage", ano: 1973, duracao: "3:50" }

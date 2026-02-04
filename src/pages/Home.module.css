@@ -1,4 +1,4 @@
-/* Correção C2.5: display none (usado para ocultar elementos condicionalmente via classe se necessário, embora React use renderização condicional) */
+/*  display none (usado para ocultar elementos condicionalmente via classe se necessário*/
 .hidden {
     display: none;
 }
