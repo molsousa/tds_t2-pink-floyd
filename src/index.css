@@ -9,7 +9,6 @@ body {
   text-align: center;
 }
 
-/* Classe .fundo reutilizável (consolida o estilo visual dos seus arquivos originais) */
 .fundo {
   background: rgba(255, 255, 255, 0.1); /* Transparência */
   border: 1px solid rgba(255, 255, 255, 0.3);
